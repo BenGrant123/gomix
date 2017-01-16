@@ -1,0 +1,10 @@
+{{>errors}}
+{{#if friends}}
+<ul>
+   {{#each friends}}
+   <li>{{this}} - <a href="/delete-friend/{{this}}" class="btn btn-xs btn-danger">remove friend</a></li>
+   {{/each}}
+</ul>
+{{else}}
+  <p>You do not have any friends :(</p>
+{{/if}}

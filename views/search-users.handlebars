@@ -1,0 +1,11 @@
+{{>errors}}
+{{>search this}}
+<h2>Results</h2>
+{{#if searchResult}}
+   <ul>
+     <li><a href="/profile/{{searchResult.username}}">{{searchResult.fullName}}: {{searchResult.username}}</a>
+      <a href="/add-friend/{{searchResult.username}}" class="btn btn-primary btn-xs">Add friend</a></li>
+   </ul>
+{{else}}
+  <p>No results found</p>
+{{/if}}

@@ -1,0 +1,7 @@
+{{>errors}}
+<ul>
+{{#each users}}
+  <li>{{username}} - <a href="/profile/{{username}}">profile</a> - <a href="/add-friend/{{username}}">add friend</a></li>
+{{/each}}
+</ul>
+ 

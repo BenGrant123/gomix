@@ -1,0 +1,15 @@
+{{#if messages.error}}
+<div class="alert alert-danger" role="alert">
+  {{#each messages.error}}
+  <p>{{message}}</p>
+  {{/each}}
+</div>
+{{/if}}
+
+{{#if messages.info}}
+<div class="alert alert-info" role="alert">
+  {{#each messages.info}}
+  <p>{{message}}</p>
+  {{/each}}
+</div>
+{{/if}}
